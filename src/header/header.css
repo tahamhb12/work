@@ -1,0 +1,189 @@
+.header header{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 25px;
+}
+.header header nav{
+    display: flex;
+    gap: 42px;
+}
+.header header nav a{
+    text-decoration: none;
+    font-family: var(--poppins);
+    font-weight: 600;
+    font-size: 11px;
+    color: #000000;
+}
+.header .icone{
+    display: none;
+}
+.header .section1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./section1.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding-inline: 50px;
+}
+.header .section1 h2{
+    font-weight: 800;
+    font-family: var(--montserrat);
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    max-width:1000px;
+}
+.header .section1 p{
+    color: #FFFFFF;
+    font-size: 19px;
+    font-weight: 400;
+    font-family: var(--karla);
+    max-width: 870px;
+    text-align: center;
+}
+.header .section1 .buttons{
+    display: flex;
+    gap: 12px;
+}
+.header .section1 .buttons button:first-child{
+    width: 203px;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-family: var(--karla);
+    cursor: pointer;
+
+}
+.header .section1 .buttons button:last-child{
+    width: 146px;
+    height: 48px;
+    background-color: white;
+    border-radius: 8px;
+    border: none;
+    font-family: var(--karla);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.header .partners{
+    background-color: #DEDEDE48;
+    height: 174px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 600px;
+    position: absolute;
+    left: 0;
+    gap: 35px;
+    padding-left: 50px;
+}
+.header .partners .first_half{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 280px;
+    text-align: center;
+}
+.header .partners .first_half .line{
+    background-color: #0D9AAD;
+    width: 130px;
+    height: 2px;
+    border-radius: 2px;
+}
+.header .partners .first_half h3{
+    font-weight: 600;
+    font-size: 21px;
+    font-family: var(--poppins);
+}
+.header .partners .first_half p{
+    font-weight: 400;
+    font-size: 16px;
+    font-family: var(--karla);
+}
+.header .partners .line2{
+    background-color: #0D9AAD;
+    width: 2px;
+    height: 130px;
+    border-radius: 2px;
+}
+.header .partners .sec_half {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.header .partners .sec_half div{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 17px 3px rgba(0, 0, 0, 0.09);
+    width: 122px;
+    height: 122px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .partners .sec_half div img{
+    width: 100px;
+    height: 50px;
+}
+@media (max-width:854px) {
+    .header .partners{
+        padding-inline: 0;
+        justify-content: center;
+    }
+}
+@media (max-width:791px) {
+    .header .section1 h2{
+        font-size: 30px;
+    }
+    .header .partners{
+        display: none;
+    }
+}
+@media (max-width:628px) {
+    .header .section1 p {
+        display: none;
+    }
+    .header .partners{
+        display: none;
+    }
+    .header .icone{
+        display: block;
+    }
+    .header header nav{
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        background-color: transparent;
+        width: 100vw;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+        top: 90px;
+        z-index: 1000;
+    }
+    .header header nav.open{
+        display: flex;
+    }
+}
+@media (max-width:469px) {
+    .header .section1 .buttons button:first-child {
+        width: 170px;
+    }
+
+}
