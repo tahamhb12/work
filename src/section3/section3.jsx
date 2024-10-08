@@ -29,6 +29,9 @@ const Section3 = () => {
                     </div>
                 </div>
             </div>
+            <div className="button">
+                <button>Become a Member</button>
+            </div>
         </div>
      );
 }

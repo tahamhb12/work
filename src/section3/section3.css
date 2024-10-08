@@ -18,12 +18,13 @@
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 .section3 .join .first{
     display: flex;
     gap: 10px;
     position: relative;
+    width: 400px;
 }
 .section3 .join .first::before{
     content: "";
@@ -40,7 +41,7 @@
     border-radius: 6px;
 }
 .section3 .join .first h2{
-    font-size: 20px;
+    font-size: 18px;
     font-family: var(--montserrat);
     font-weight: 700;
     margin-top: 20px;
@@ -54,14 +55,37 @@
     text-align: left;
     margin-top: 12px;
 }
+.section3 .button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section3 .button button{
+    width: 201px;
+    height: 48px;
+    border: none;
+    border: 1px solid;
+    border-radius: 8px;
+    background-color: transparent;
+    font-size: 16px;
+    font-family: var(--karla);
+    font-weight: 500;
+    margin-top: 25px;
 
-@media (max-width:460px) {
+}
+
+@media (max-width:500px) {
+
     .section3 .join .first .img {
         width: 120px;
         height: 120px;
     }
     .section3 .join .first h2{
-        font-size: 17px;
+        font-size: 15px;
+    }
+    .section3 .join .first p{
+        font-size: 13px;
     }
     .section3  {
         margin-top: 50px;
