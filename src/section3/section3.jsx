@@ -1,4 +1,17 @@
 import "./section3.css"
+import pic1 from "./pics/1.jpeg"
+import pic2 from "./pics/2.jpeg"
+import pic3 from "./pics/3.png"
+import pic4 from "./pics/4.svg"
+import pic6 from "./pics/6.jpeg"
+import pic7 from "./pics/7.png"
+import pic8 from "./pics/8.png"
+import pic9 from "./pics/9.png"
+import pic10 from "./pics/10.png"
+import pic11 from "./pics/11.png"
+
+
+
 const Section3 = () => {
 
     return ( 
@@ -31,6 +44,71 @@ const Section3 = () => {
             </div>
             <div className="button">
                 <button>Become a Member</button>
+            </div>
+            <div className="slider">
+                <div className="slide-track">
+                    <div className="slide">
+                        <img src={pic1} alt="" />
+                    </div>
+                    <div className="slide">
+                        <img src={pic2} alt="" />
+                    </div>
+                    <div className="slide">
+                        <img src={pic3} alt="" />
+                    </div>
+                    <div className="slide">
+                        <img src={pic4} alt="" />
+                    </div>
+                    <div className="slide">
+                        <img src={pic6} alt="" />
+                    </div>
+                    <div className="slide">
+                        <img src={pic7} alt="" />
+                    </div>
+                    <div className="slide">
+                        <img src={pic8} alt="" />
+                    </div>
+                    <div className="slide">
+                        <img src={pic9} alt="" />
+                    </div>
+                    <div className="slide">
+                        <img src={pic10} alt="" />
+                    </div>
+                    <div className="slide">
+                        <img src={pic11} alt="" />
+                    </div>
+                    {/* double it */}
+                    <div className="slide">
+                        <img src={pic1} alt="" />
+                    </div>
+                    <div className="slide">
+                        <img src={pic2} alt="" />
+                    </div>
+                    <div className="slide">
+                        <img src={pic3} alt="" />
+                    </div>
+                    <div className="slide">
+                        <img src={pic4} alt="" />
+                    </div>
+                    <div className="slide">
+                        <img src={pic6} alt="" />
+                    </div>
+                    <div className="slide">
+                        <img src={pic7} alt="" />
+                    </div>
+                    <div className="slide">
+                        <img src={pic8} alt="" />
+                    </div>
+                    <div className="slide">
+                        <img src={pic9} alt="" />
+                    </div>
+                    <div className="slide">
+                        <img src={pic10} alt="" />
+                    </div>
+                    <div className="slide">
+                        <img src={pic11} alt="" />
+                    </div>
+                </div>
             </div>
         </div>
      );

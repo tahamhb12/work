@@ -72,8 +72,47 @@
     font-family: var(--karla);
     font-weight: 500;
     margin-top: 25px;
-
 }
+.section3 .marks{
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+.slider{
+    height: 250px;
+    width: 90%;
+    position: relative;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    overflow: hidden;
+    margin: auto;
+}
+.slide-track{
+    display: flex;
+    width: calc(250px * 20);
+    animation: scroll 40s linear infinite;
+}
+.slide {
+    height: 128px;
+    width: 128px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+.section3 img{
+    width: 100%;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-128px * 10));
+    }
+}
+
 
 @media (max-width:500px) {
 
