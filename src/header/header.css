@@ -164,6 +164,7 @@
     }
     .header .icone{
         display: block;
+        font-size: 30px;
     }
     .header header nav{
         position: absolute;
