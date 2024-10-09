@@ -1,0 +1,69 @@
+.section6{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(211, 201, 201, 0.778)), url(/src/section4/background.png);
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    left: -5vw;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+.section6 .infos{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.section6 .infos h2{
+    font-size: 40px;
+    font-family: var(--poppins);
+    font-weight: 600;
+}
+.section6 .infos p{
+    font-size: 16px;
+    font-family: var(--karla);
+    font-weight: 400;
+    max-width: 800px;
+}
+.section6 .infos button {
+    width: 146px;
+    height: 48px;
+    border: none;
+    border: 1px solid;
+    border-radius: 8px;
+    background-color: transparent;
+    font-family: var(--karla);
+    font-size: 16px;
+    font-weight: 500;
+}
+.section6 .shape{
+    width: 378px;
+    height: 378px;
+    background-color: gray;
+}
+
+@media (max-width:920px) {
+    .section6{
+        flex-direction: column-reverse;
+        padding-inline: 20px;
+        gap: 0;
+    }
+    .section6 .infos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap: 16px;
+        margin-top: 15px;
+    }
+    .section6 .shape{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .section6 .infos h2{
+        font-size: 30px;
+        }
+}

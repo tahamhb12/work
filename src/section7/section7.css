@@ -1,0 +1,33 @@
+.section7{
+    margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+}
+.section7 h2{
+    font-weight: 800;
+    font-family: var(--montserrat);
+    font-size: 36px;
+}
+.section7 p{
+    font-family: var(--karla);
+    font-size: 16px;
+    font-weight: 400;
+    color: #34373A;
+    max-width: 1300px;
+}
+.section7 button{
+    width: 118px;
+    height: 48px;
+    border: none;
+    border: 1px solid;
+    border-radius: 8px;
+    background-color: transparent;
+    font-family: var(--karla);
+    font-size: 16px;
+    font-weight: 500;
+    margin: auto;
+}
