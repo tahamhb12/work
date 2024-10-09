@@ -14,12 +14,13 @@ const Navbar = () => {
             <header>
                 <img src={logo} alt="" />
                 <nav className={isNavOpen ? "open" : ""}>
-                    <a href="">Home</a>
+                    <Link onClick={handleToggleNav} to={"/"}>Home</Link>
                     <a href="">Membership</a>
-                    <Link to={"/about_us"}>About</Link>
+                    <Link onClick={handleToggleNav} to={"/about_us"}>About</Link>
                     <a href="">Contacts</a>
                 </nav>
                 <i onClick={handleToggleNav} class="icone fa-solid fa-bars"></i>
+                {isNavOpen && <i onClick={handleToggleNav} class="close fa-solid fa-x"></i>}
             </header>
         </div>
      );

@@ -141,6 +141,9 @@
     width: 100px;
     height: 50px;
 }
+.header .close {
+    display: none;
+}
 @media (max-width:854px) {
     .header .partners{
         padding-inline: 0;
@@ -166,16 +169,24 @@
         display: block;
         font-size: 30px;
     }
+    .header .close {
+        display: block;
+        position: absolute;
+        z-index: 9888;
+        right: 40px;
+    }
     .header header nav{
         position: absolute;
         display: none;
         flex-direction: column;
-        background-color: transparent;
+        background-color: white;
+        position: fixed;
         width: 100vw;
+        height: 100vh;
         left: 0;
+        top: 0;
         align-items: center;
         justify-content: center;
-        top: 90px;
         z-index: 1000;
     }
     .header header nav.open{
