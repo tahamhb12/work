@@ -1,0 +1,198 @@
+.aboutUs .section1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cyan;
+    gap: 33px;
+    position: relative;
+    width: 100vw;
+    left: -5vw;
+    padding: 20px;
+}
+.aboutUs .section1 .infos{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+.aboutUs .section1 .infos h2{
+    color: white;
+    font-family: var(--karla);
+    font-weight: 700;
+    font-size: 31px;
+    border-left: solid 6px #0D9AAD;
+    height: 84px;
+    border-top-left-radius:10px ;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 24px;
+}
+.aboutUs .section1 .infos p{
+    color: #C2C2C2;
+    font-family: var(--karla);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    max-width: 700px;
+}
+.aboutUs .section1 .video{
+    width: 350px;
+    height: 350px;
+    background-color: gray;
+}
+.aboutUs .section1 .buttons{
+    display: flex;
+    gap: 24px;
+}
+.aboutUs .section1 .buttons button:first-child{
+    background-color: #F5F5F5;
+    width: 109px;
+    height: 52px;
+    color: var(--karla);
+    font-weight: 500;
+    font-size: 17px;
+    color: #1F1F1F;
+    border-radius: 8px;
+    border: none;
+}
+.aboutUs .section1 .buttons button:last-child{
+    background-color: transparent;
+    border: none;
+    border: 1px solid;
+    width: 139px;
+    height: 52px;
+    color: var(--karla);
+    font-weight: 500;
+    font-size: 17px;
+    color: #FFFFFF;
+    border-radius: 8px;
+}
+.aboutUs .header .partners{
+    margin: 0 ;
+}
+.aboutUs .section3{
+    display: none;
+}
+.aboutUs .section2{
+    padding-top: 259px;
+}
+.aboutUs .section42{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #248DA7;
+    width: 100vw;
+    position: relative;
+    left: -5vw;
+    gap: 105px;
+    padding: 20px;
+    margin-top: 70px;
+}
+.aboutUs .section42 .infos{
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    font-family: var(--karla);
+}
+.aboutUs .section42 .infos h2{
+    font-weight: 700;
+    font-size: 36px;
+    color: white;
+    max-width: 555px;
+}
+.aboutUs .section42 .infos p{
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.aboutUs .section42 .infos button{
+    border: none;
+    width: 182px;
+    height: 53px;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    color: white;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 18px;
+}
+.aboutUs .section42 .efforts{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.aboutUs .section42 .efforts .first{
+    background: rgba(255, 255, 255, 0.01);
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    height: 290px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+    color: white;
+    font-family: var(--karla);
+}
+
+@media (max-width:1193px) {
+    .aboutUs .section42{
+        margin-top: 150px;
+    }
+    .aboutUs .section42 .infos h2{
+        font-size: 29px;
+    }
+    .aboutUs .section42 .efforts .first{
+        height: 271px;
+        width: 191px;
+    }
+}
+@media (max-width:920px) {
+    .aboutUs .section1{
+        flex-direction: column-reverse;
+        padding-inline: 20px;
+        gap: 0;
+    }
+    .aboutUs .section1 .infos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap: 16px;
+        margin-top: 30px;
+    }
+    .aboutUs .section1 .video{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .aboutUs .section1 .infos h2{
+        font-size: 30px;
+    }
+    .section42{
+        background-image: linear-gradient(rgba(26, 30, 30, 0.5), rgba(25, 28, 29, 0.778)), url(./backk.jpg);
+        background-position: center;
+        background-size: cover;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:791px) {
+    .aboutUs .section3{
+        display: flex;
+        padding: 0;
+    }
+    .aboutUs .section2{
+        padding-top: 0;
+    }
+}
+

@@ -1,9 +1,8 @@
-.section5{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.778)), url(/src/section4/background.png);
+.section4{
     display: flex;
-    gap: 60px;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(rgba(169, 239, 244, 0.5), rgba(207, 230, 235, 0.778)), url(/src/homepage/section4/background.png);
     width: 100vw;
     left: -5vw;
     position: relative;
@@ -11,25 +10,24 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20px;
-    flex-direction: row-reverse;
 }
-.section5 .infos{
+.section4 .infos{
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
-.section5 .infos h2{
+.section4 .infos h2{
     font-size: 40px;
     font-family: var(--poppins);
     font-weight: 600;
 }
-.section5 .infos p{
+.section4 .infos p{
     font-size: 16px;
     font-family: var(--karla);
     font-weight: 400;
     max-width: 800px;
 }
-.section5 .infos button {
+.section4 .infos button {
     width: 146px;
     height: 48px;
     border: none;
@@ -40,19 +38,18 @@
     font-size: 16px;
     font-weight: 500;
 }
-.section5 .shape{
+.section4 .shape{
     width: 378px;
     height: 378px;
     background-color: gray;
 }
 
 @media (max-width:920px) {
-    .section5{
+    .section4{
         flex-direction: column-reverse;
         padding-inline: 20px;
-        gap: 0;
     }
-    .section5 .infos{
+    .section4 .infos{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -60,11 +57,11 @@
         gap: 16px;
         margin-top: 15px;
     }
-    .section5 .shape{
+    .section4 .shape{
         margin-top: 20px;
         width: 100%;
     }
-    .section5 .infos h2{
+    .section4 .infos h2{
         font-size: 30px;
         }
 }
