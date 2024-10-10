@@ -5,6 +5,7 @@ import {AnimatePresence, motion} from "framer-motion"
 const Membership = () => {
 
     const [open,setopen] = useState(false)
+    const [open2,setopen2] = useState(false)
     return ( 
         <div className="membership">
             <div className="section1">
@@ -27,6 +28,22 @@ const Membership = () => {
                         </p>
                         <AnimatePresence>
                         {open && <motion.p
+                        initial={{height:50,opacity:0}}
+                        animate={{height:"fit-content",opacity:1}}
+                        exit={{height:50,opacity:0}}
+                        className="answer">Are ccc a part of Morocco's market research community and looking to connect with a network dedicated to advancing the industry? AMISE invites you to join a group of forward-thinking professionals committed to maintaining the highest ethical standards and driving the future of research.
+                        </motion.p>}
+                        </AnimatePresence>
+                    </div>
+                    <div style={open2 ? {borderLeft:"4px solid blue",height:"fit-content"}:{}} className="questions">
+                        <p>Interested in Joining the Network?
+                        <svg className="open" onClick={()=>setopen2(!open2)} width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 16H24" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16 24V8" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </p>
+                        <AnimatePresence>
+                        {open2 && <motion.p
                         initial={{height:50,opacity:0}}
                         animate={{height:"fit-content",opacity:1}}
                         exit={{height:50,opacity:0}}

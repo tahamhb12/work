@@ -19,7 +19,7 @@ const Navbar = () => {
                     <Link onClick={handleToggleNav} to={"/"}>Home</Link>
                     <Link onClick={handleToggleNav} to={"/membership"}>Membership</Link>
                     <Link onClick={handleToggleNav} to={"/about_us"}>About</Link>
-                    <a href="">Contacts</a>
+                    <Link to={"/contact_us"}>Contacts</Link>
                 </nav>
                 <i onClick={handleToggleNav} class="icone fa-solid fa-bars"></i>
                 {isNavOpen && <i onClick={handleToggleNav} class="close fa-solid fa-x"></i>}
