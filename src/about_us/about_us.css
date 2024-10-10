@@ -208,6 +208,15 @@
     }
     .aboutUs .section2{
         padding-top: 0;
+        margin-top: 0;
+    }
+    .aboutUs .section3{
+        margin-top: 270px;
+    }
+}
+@media (max-width:420px) {
+    .aboutUs .section3{
+        margin-top: 389px;
     }
 }
 
