@@ -47,7 +47,7 @@ const AboutUs = () => {
                 </div>
             </div>
             <div className="section3">
-                <div className="slider">
+                <div style={{marginTop:"-150px"}} className="slider">
                     <div className="slide-track">
                         <div className="slide">
                             <img src={pic1} alt="" />

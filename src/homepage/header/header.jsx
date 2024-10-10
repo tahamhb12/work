@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./header.css";
-import amra from "./partners/amra.png"
-import esomar from "./partners/esomar.png"
-import gam from "./partners/gam.png"
+import amra from "./partners/amra.svg"
+import esomar from "./partners/esomar.svg"
+import gam from "./partners/gam.svg"
 const Header = () => {
 
 
