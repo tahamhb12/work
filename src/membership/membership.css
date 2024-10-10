@@ -50,7 +50,7 @@
 }
 .membership .section1 .questions .open{
     position: absolute;
-    right: 0;
+    right: -60px;
     cursor: pointer;
     z-index: 9;
 }
