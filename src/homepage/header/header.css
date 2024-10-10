@@ -205,10 +205,10 @@
         position: relative;
         left: -5vw;
         padding: 18px;
-        background: rgba(7, 1, 41, 0.78);
+        background-color: white;
     }
     .header header .icone {
-        color: white;
+        color: black;
     }
     .header .logo1{
         display: none;
