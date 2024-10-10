@@ -5,7 +5,9 @@
     left: -5vw;
     width: 100vw;
     padding: 51px;
-    margin-top: 240px;
+    margin-top: 213px;
+    position: relative;
+    bottom: -57px;
 }
 .membership .contact img{
     max-width: 100%;
