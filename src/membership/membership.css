@@ -112,6 +112,7 @@
 @media (max-width:1235px) {
     .membership .section1 img{
         width: 400px;
+        margin: auto;
     }
 }
 @media (max-width:983px) {
@@ -137,6 +138,9 @@
         font-weight: 700;
         font-family: var(--montserrat);
         text-align: center;
+    }
+    .membership .section1{
+        align-items: flex-start;
     }
 }
 @media (max-width:481px) {
