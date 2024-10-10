@@ -1,7 +1,6 @@
 .footer{
-    background-image: linear-gradient(rgba(54, 40, 40, 0.5), rgba(211, 201, 201, 0.778)),url(./back.jpg);
+    background-image: linear-gradient(rgba(54, 40, 40, 0.5), rgba(211, 201, 201, 0.778)),url(./back.png);
     background-size: cover;
-    background-position: center;
     width: 100vw;
     position: relative;
     left: -5vw;

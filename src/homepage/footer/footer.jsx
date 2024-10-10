@@ -1,8 +1,9 @@
 import "./footer.css"
+import logo from "./Vector.png"
 const Footer = () => {
     return ( 
         <div className="footer">
-            <h1>AMISE</h1>
+            <h1><img src={logo} alt="" /></h1>
             <div className="reseau">
                 <div className="first">
                     <h2>Resaux sociaux</h2>

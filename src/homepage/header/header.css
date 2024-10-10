@@ -144,6 +144,9 @@
 .header .close {
     display: none;
 }
+.header .logo{
+    display: none;
+}
 @media (max-width:854px) {
     .header .partners{
         padding-inline: 0;
@@ -171,7 +174,7 @@
     }
     .header .close {
         display: block;
-        position: absolute;
+        position: fixed;
         z-index: 9888;
         right: 40px;
     }
@@ -190,6 +193,27 @@
         z-index: 1000;
     }
     .header header nav.open{
+        display: flex;
+    }
+    .header header{
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        width: 100vw;
+        position: relative;
+        left: -5vw;
+        padding: 18px;
+        background: rgba(7, 1, 41, 0.78);
+    }
+    .header header .icone {
+        color: white;
+    }
+    .header .logo1{
+        display: none;
+    }
+    .header .logo{
         display: flex;
     }
 }

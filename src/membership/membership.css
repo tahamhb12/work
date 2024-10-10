@@ -1,0 +1,151 @@
+.membership{
+    padding-top: 86px;
+}
+.membership .section1{
+    display: flex;
+    gap: 64px;
+}
+.membership .section1 p{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.membership .section1 h2{
+    font-family: var(--poppins);
+    font-weight: 700;
+    font-size: 36px;
+}
+.membership .section1 .questions{
+    margin-top: 56px;
+    border-left: 4px solid #E0E0E0;
+    height: 32px;
+    padding-left: 25px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.membership .section1 .questions p{
+    display: flex;
+    justify-content: space-between;
+/*     color: #248DA7;
+    font-size: 18px;
+    font-family: var(--karla);
+    font-weight: 700; */
+    color: #424242;
+    font-size: 18px;
+    font-family: var(--karla);
+    font-weight: 500;
+    position: relative;
+
+}
+.membership .section1 .questions .answer{
+    font-family: var(--karla);
+    font-weight: 500;
+    font-size: 18px;
+    color: #666C89;
+    margin-top: 21px;
+}
+.membership .section1 .questions .open{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.membership .section2{
+    all: initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-bottom: 200px;
+    gap: 140px;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+.membership .section2 .form h2{
+    font-size: 54px;
+    font-weight: 700;
+    font-family: var(--montserrat);
+}
+.membership .section2 .form h2 span{
+    color: #248DA7;
+}
+.membership .section2 .form p{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: var(--montserrat);
+    margin-bottom: 20px;
+}
+.membership .section2 .form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.membership .section2 .form form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.membership .section2 .form form input{
+    max-width: 545px;
+    height: 50px;
+    padding-left: 20px;
+}
+.membership .section2 .form form input[type="button"]{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--montserrat);
+}
+.membership .section2 .shape{
+    background-color: gray;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 101px;
+}
+
+
+
+@media (max-width:1235px) {
+    .membership .section1 img{
+        width: 400px;
+    }
+}
+@media (max-width:983px) {
+    .membership .section1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .membership .section1 img{
+        width: 70%;
+    }
+}
+
+@media (max-width:611px) {
+    .membership .section1  h2{
+        font-size: 30px;
+    }
+    .membership .section1 img{
+        width: 80%;
+    }
+    .membership .section2 .form h2{
+        font-size: 54px;
+        font-weight: 700;
+        font-family: var(--montserrat);
+        text-align: center;
+    }
+}
+@media (max-width:481px) {
+    .membership .section1  h2{
+        font-size: 22px;
+    }
+    .membership .section1 .questions .open{
+        right: -20px;
+        top: -40px;
+    }
+
+}

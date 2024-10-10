@@ -1,5 +1,6 @@
 import { useState } from "react";
-import logo from "./logo.png"
+import logo from "./logo.svg" 
+import logo1 from "./logo1.svg" 
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -12,10 +13,11 @@ const Navbar = () => {
     return ( 
         <div className="header">
             <header>
-                <img src={logo} alt="" />
+                <img className="logo" src={logo} alt="" />
+                <img className="logo1" src={logo1} alt="" />
                 <nav className={isNavOpen ? "open" : ""}>
                     <Link onClick={handleToggleNav} to={"/"}>Home</Link>
-                    <a href="">Membership</a>
+                    <Link onClick={handleToggleNav} to={"/membership"}>Membership</Link>
                     <Link onClick={handleToggleNav} to={"/about_us"}>About</Link>
                     <a href="">Contacts</a>
                 </nav>
