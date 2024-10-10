@@ -147,5 +147,9 @@
         right: -20px;
         top: -40px;
     }
-
+}
+@media (max-width:386px) {
+    .membership .section2 .shape{
+        margin-top: 70px;
+    }
 }

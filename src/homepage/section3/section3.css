@@ -130,3 +130,23 @@
         margin-top: 50px;
     }
 }
+@media (max-width:401px) {
+    .section3 .join .first .img{
+        width: 100px;
+        height: 100px;
+    }
+    .section3 .join .first::before{
+        right: 19px;
+        width: 200px;
+    }
+}
+@media (max-width:367px) {
+    .section3 .join .first .img{
+        width: 85px;
+        height: 85px;
+    }
+    .section3 .join .first::before{
+        right: 19px;
+        width: 200px;
+    }
+}

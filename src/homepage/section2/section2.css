@@ -84,6 +84,9 @@
     .section2 .infos h2 {
         font-size: 30px;
     }
+    .section2 .buttons{
+        margin: auto;
+    }
 }
 @media (max-width:469px) {
     .section2 .infos p {
@@ -91,5 +94,17 @@
     }
     .section2 .infos h2 {
         font-size: 30px;
+    }
+}
+@media (max-width:419px) {
+    .section2{
+        padding-top: 722px;
+        padding-bottom: 100px;
+    }
+}
+@media (max-width:380px) {
+    .section2 .infos p{
+        width: 300px;
+        text-align: center;
     }
 }
