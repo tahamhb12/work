@@ -50,6 +50,17 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
+            <div className="section2">
+                <div></div>
+                <div className="infos">
+                    <h2>AMISE Story and Vision</h2>
+                    <p>AMISE was founded to unite Morocco’s market research professionals around a commitment to ethics and integrity. Recognizing the growing role of data in shaping strategies, we created a framework that aligns with global standards while addressing Morocco’s unique needs.</p>
+                    <p>Our vision is to be the leading voice for market research in Morocco, championing ethical data use and the power of research insights in decision-making. By promoting transparency, collaboration, and innovation, AMISE strives to raise industry standards and ensure research contributes positively to society.</p>
+                    <div className="buttons">
+                        <button onClick={()=>navigate("/membership")}>Become a Member</button>
+                    </div>
+                </div>
+            </div>
             <div className="section3">
                 <div style={{marginTop:"-150px"}} className="slider">
                     <div className="slide-track">
@@ -81,7 +92,7 @@ const AboutUs = () => {
                             <img src={pic10} alt="" />
                         </div>
                         <div className="slide">
-                            <img src={pic11} alt="" />
+                            <img className="img11" src={pic11} alt="" />
                         </div>
                         {/* double it */}
                         <div className="slide">
@@ -112,19 +123,8 @@ const AboutUs = () => {
                             <img src={pic10} alt="" />
                         </div>
                         <div className="slide">
-                            <img src={pic11} alt="" />
+                            <img className="img11" src={pic11} alt="" />
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div className="section2">
-                <div></div>
-                <div className="infos">
-                    <h2>AMISE Story and Vision</h2>
-                    <p>AMISE was founded to unite Morocco’s market research professionals around a commitment to ethics and integrity. Recognizing the growing role of data in shaping strategies, we created a framework that aligns with global standards while addressing Morocco’s unique needs.</p>
-                    <p>Our vision is to be the leading voice for market research in Morocco, championing ethical data use and the power of research insights in decision-making. By promoting transparency, collaboration, and innovation, AMISE strives to raise industry standards and ensure research contributes positively to society.</p>
-                    <div className="buttons">
-                        <button onClick={()=>navigate("/membership")}>Become a Member</button>
                     </div>
                 </div>
             </div>

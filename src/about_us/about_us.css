@@ -161,6 +161,9 @@
 .aboutUs .section2 div:first-child{
     background-image: url(./image.svg);
 }
+.aboutUs .img11{
+    width: 50px;
+}
 
 @media (max-width:1193px) {
     .aboutUs .section42{
@@ -213,18 +216,19 @@
         padding-top: 0;
         margin-top: 0;
     }
-    .aboutUs .section3{
+    .aboutUs .section2{
         margin-top: 366px;
+    }
+    .aboutUs .section3{
+        margin-top: 211px;
+    }
+    .aboutUs .section42{
+        margin-top: 0;
     }
 }
 @media (max-width:420px) {
     .aboutUs .section3{
-        margin-top: 389px;
-    }
-}
-@media (max-width:368px) {
-    .aboutUs .section3{
-        margin-top: 500px;
+        margin-top: 211px;
     }
 }
 

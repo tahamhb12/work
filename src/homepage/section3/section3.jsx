@@ -78,7 +78,7 @@ const Section3 = () => {
                         <img src={pic10} alt="" />
                     </div>
                     <div className="slide">
-                        <img src={pic11} alt="" />
+                        <img className="img11" src={pic11} alt="" />
                     </div>
                     {/* double it */}
                     <div className="slide">
@@ -109,7 +109,7 @@ const Section3 = () => {
                         <img src={pic10} alt="" />
                     </div>
                     <div className="slide">
-                        <img src={pic11} alt="" />
+                        <img className="img11" src={pic11} alt="" />
                     </div>
                 </div>
             </div>

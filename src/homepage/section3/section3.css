@@ -120,6 +120,9 @@
     background-position: center;
     background-size: cover;
 }
+.section3 .img11{
+    width: 50px;
+}
 @keyframes scroll {
     0% {
         transform: translateX(0);
