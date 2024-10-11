@@ -11,6 +11,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  overflow-x: hidden;
+}
 .App{
   padding-top: 25px;
   width: 90vw;

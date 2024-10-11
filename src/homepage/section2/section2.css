@@ -101,7 +101,7 @@
 }
 @media (max-width:419px) {
     .section2{
-        padding-top: 722px;
+        padding-top: 587px;
         padding-bottom: 100px;
     }
 }
@@ -109,5 +109,10 @@
     .section2 .infos p{
         width: 300px;
         text-align: center;
+    }
+}
+@media (max-width:368px) {
+    .section2{
+        padding-top: 702px;
     }
 }
