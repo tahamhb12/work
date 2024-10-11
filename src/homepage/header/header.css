@@ -146,6 +146,10 @@
 }
 .header .logo{
     display: none;
+    cursor: pointer;
+}
+.header .logo1{
+    cursor: pointer;
 }
 @media (max-width:854px) {
     .header .partners{
@@ -220,9 +224,12 @@
     }
     .header .logo1{
         display: none;
+        cursor: pointer;
     }
     .header .logo{
         display: flex;
+        width: 76px;
+        cursor: pointer;
     }
 }
 @media (max-width:469px) {

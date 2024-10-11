@@ -9,10 +9,13 @@ import pic8 from "./pics/8.png"
 import pic9 from "./pics/9.png"
 import pic10 from "./pics/10.png"
 import pic11 from "./pics/11.png"
+import { useNavigate } from "react-router-dom"
 
 
 
 const Section3 = () => {
+    
+    const navigate = useNavigate()
 
     return ( 
         <div className="section3">
@@ -43,7 +46,7 @@ const Section3 = () => {
                 </div>
             </div>
             <div className="button">
-                <button>Become a Member</button>
+                <button  onClick={()=>navigate("/membership")}>Become a Member</button>
             </div>
             <div className="slider">
                 <div className="slide-track">

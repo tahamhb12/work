@@ -1,5 +1,5 @@
 .section6{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(211, 201, 201, 0.778)), url(/src/homepage/section4/background.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(211, 201, 201, 0.878)), url(/src/homepage/section4/background.png);
     display: flex;
     gap: 60px;
     justify-content: center;
@@ -42,6 +42,9 @@
     width: 378px;
     height: 378px;
     background-color: gray;
+    background-image: url(./image.svg);
+    background-position: center;
+    background-size: cover;
 }
 
 @media (max-width:920px) {

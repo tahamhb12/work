@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./membership.css"
-import object from "./Object.png"
+import object from "./object.svg"
 import {AnimatePresence, motion} from "framer-motion"
 const Membership = () => {
 

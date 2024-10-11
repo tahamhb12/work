@@ -2,6 +2,8 @@ import { useState } from "react";
 import logo from "./logo.svg" 
 import logo1 from "./logo1.svg" 
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -9,17 +11,20 @@ const Navbar = () => {
     const handleToggleNav = () => {
         setIsNavOpen(!isNavOpen);
     };
+    const navigate = useNavigate()
+    const location = useLocation()
+
 
     return ( 
         <div className="header">
             <header>
-                <img className="logo" src={logo} alt="" />
-                <img className="logo1" src={logo1} alt="" />
+                <img onClick={()=>navigate("/")} className="logo" src={logo} alt="" />
+                <img onClick={()=>navigate("/")} className="logo1" src={logo1} alt="" />
                 <nav className={isNavOpen ? "open" : ""}>
-                    <Link onClick={handleToggleNav} to={"/"}>Home</Link>
-                    <Link onClick={handleToggleNav} to={"/membership"}>Membership</Link>
-                    <Link onClick={handleToggleNav} to={"/about_us"}>About</Link>
-                    <Link onClick={handleToggleNav} to={"/contact_us"}>Contacts</Link>
+                    <Link style={location.pathname=="/" ? {fontWeight:"bold",fontSize:"13px"}:{}} onClick={handleToggleNav} to={"/"}>Home</Link>
+                    <Link style={location.pathname=="/membership" ? {fontWeight:"bold",fontSize:"13px"}:{}} onClick={handleToggleNav} to={"/membership"}>Membership</Link>
+                    <Link style={location.pathname=="/about_us" ? {fontWeight:"bold",fontSize:"13px"}:{}} onClick={handleToggleNav} to={"/about_us"}>About</Link>
+                    <Link style={location.pathname=="/contact_us" ? {fontWeight:"bold",fontSize:"13px"}:{}} onClick={handleToggleNav} to={"/contact_us"}>Contacts</Link>
                 </nav>
                 <i onClick={handleToggleNav} class="icone fa-solid fa-bars"></i>
                 {isNavOpen && <i onClick={handleToggleNav} class="close fa-solid fa-x"></i>}

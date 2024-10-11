@@ -105,6 +105,21 @@
 .section3 img{
     width: 100%;
 }
+.section3 .join .first:first-child .img:first-child{
+    background-image: url(./images/img1.svg);
+    background-position: center;
+    background-size: cover;
+}
+.section3 .join .first:nth-child(2) .img:first-child{
+    background-image: url(./images/img2.svg);
+    background-position: center;
+    background-size: cover;
+}
+.section3 .join .first:last-child .img:first-child{
+    background-image: url(./images/img3.svg);
+    background-position: center;
+    background-size: cover;
+}
 @keyframes scroll {
     0% {
         transform: translateX(0);

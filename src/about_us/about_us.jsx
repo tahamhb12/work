@@ -1,6 +1,6 @@
-import amra from "./partners/amra.png"
-import esomar from "./partners/esomar.png"
-import gam from "./partners/gam.png"
+import amra from "./partners/amra.svg"
+import esomar from "./partners/esomar.svg"
+import gam from "./partners/gam.svg"
 import pic1 from "./pics/1.jpeg"
 import pic2 from "./pics/2.jpeg"
 import pic3 from "./pics/3.png"
@@ -11,11 +11,15 @@ import pic8 from "./pics/8.png"
 import pic9 from "./pics/9.png"
 import pic10 from "./pics/10.png"
 import pic11 from "./pics/11.png"
+import { useNavigate } from "react-router-dom"
 
 
 import "./about_us.css"
 import Section7 from "../homepage/section7/section7"
 const AboutUs = () => {
+
+    const navigate = useNavigate()
+
     return ( 
         <div className="aboutUs">
             <div className="section1">
@@ -23,8 +27,8 @@ const AboutUs = () => {
                     <h2>Leading the Market Research Evolution in Morocco</h2>
                     <p>to safeguard and empower the future of market research and data analytics, we champion their pivotal role in empowering informed business decisions to build trust, and elevating the impact of insights to drive strategic success across all sectors.</p>
                     <div className="buttons">
-                        <button>Join Us</button>
-                        <button>Contact Us</button>
+                        <button onClick={()=>navigate("/membership")}>Join Us</button>
+                        <button onClick={()=>navigate("/contact_us")}>Contact Us</button>
                     </div>
                 </div>
                 <div className="video"></div>
@@ -120,7 +124,7 @@ const AboutUs = () => {
                     <p>AMISE was founded to unite Morocco’s market research professionals around a commitment to ethics and integrity. Recognizing the growing role of data in shaping strategies, we created a framework that aligns with global standards while addressing Morocco’s unique needs.</p>
                     <p>Our vision is to be the leading voice for market research in Morocco, championing ethical data use and the power of research insights in decision-making. By promoting transparency, collaboration, and innovation, AMISE strives to raise industry standards and ensure research contributes positively to society.</p>
                     <div className="buttons">
-                        <button>Become a Member</button>
+                        <button onClick={()=>navigate("/membership")}>Become a Member</button>
                     </div>
                 </div>
             </div>
@@ -160,7 +164,7 @@ const AboutUs = () => {
                     </svg>
                     Our Objectives</p>
                     <h2>At AMISE, we have set clear objectives to guide our efforts:</h2>
-                    <button>Visit Shop Page</button>
+                    <button onClick={()=>navigate("/membership")}>Join Us</button>
                 </div>
                 <div className="efforts">
                     <div className="first">

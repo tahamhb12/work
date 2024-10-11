@@ -3,9 +3,10 @@ import "./header.css";
 import amra from "./partners/amra.svg"
 import esomar from "./partners/esomar.svg"
 import gam from "./partners/gam.svg"
+import { useNavigate  } from "react-router-dom";
 const Header = () => {
 
-
+const navigate = useNavigate()
 
     return ( 
         <div className="header">
@@ -13,8 +14,8 @@ const Header = () => {
                 <h2>Leading the way in ethical research and insight-driven decision-making</h2>
                 <p>Empowering the future of decision-making through market research and data analysis. dedicated to ensuring the ethical handling of data and fostering a dynamic, trusted community of researchers committed to shaping a smarter, more informed Morocco</p>
                 <div className="buttons">
-                    <button>Become a member</button>
-                    <button>Contact Us</button>
+                    <button onClick={()=>navigate("/membership")}>Become a member</button>
+                    <button onClick={()=>navigate("/contact_us")}>Contact Us</button>
                 </div>
             </div>
             <div className="partners">

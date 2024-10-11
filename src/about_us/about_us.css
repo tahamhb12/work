@@ -158,6 +158,9 @@
     color: white;
     font-family: var(--karla);
 }
+.aboutUs .section2 div:first-child{
+    background-image: url(./image.svg);
+}
 
 @media (max-width:1193px) {
     .aboutUs .section42{
@@ -211,12 +214,17 @@
         margin-top: 0;
     }
     .aboutUs .section3{
-        margin-top: 270px;
+        margin-top: 366px;
     }
 }
 @media (max-width:420px) {
     .aboutUs .section3{
         margin-top: 389px;
+    }
+}
+@media (max-width:368px) {
+    .aboutUs .section3{
+        margin-top: 500px;
     }
 }
 
