@@ -149,6 +149,11 @@
         margin-top: 50px;
     }
 }
+@media (max-width:418px) {
+    .section3{
+        margin-top: 0px;
+    }
+}
 @media (max-width:401px) {
     .section3 .join .first .img{
         width: 100px;
