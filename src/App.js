@@ -12,14 +12,14 @@ function App() {
   
   return (
     <div className="App">
-/*       <Navbar/>
+      {/*<Navbar/>
       <Routes>
         <Route path="/" exact element={<HomePage/>}/>
         <Route path="/about_us" exact element={<AboutUs/>}/>
         <Route path="/membership" exact element={<Membership/>}/>
         <Route path="/contact_us" exact element={<Contact/>}/>
       </Routes>
-      <Footer/> */
+      <Footer/>*/}
     </div>
   );
 }
